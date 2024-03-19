@@ -1,6 +1,6 @@
 import React,{useState, useEffect} from "react";
 import axois from "axios";
-import EmojiPicker from 'emoji-picker-react';
+// import EmojiPicker from 'emoji-picker-react';
 
 export function AllEmojiText(){
 
@@ -28,5 +28,3 @@ export function AllEmojiText(){
         </div>
     )
 }
-
-export default AllEmojiText;
