@@ -10,12 +10,16 @@ import Addemoji from './component/EmojiText/Addemoji';
 // import { AllEmojiText } from './component/EmojiText/AllEmojiText';
 import EmojiText from './component/EmojiText/EmojiText';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 function App() {
   return (
     <Router>
       <div>
+<<<<<<< Updated upstream
         { <Navbar /> }
+=======
+       <Header /> 
+
+>>>>>>> Stashed changes
         <Routes>
           {/* {emoji to text translater} */}
           {/* Commenting out the route for AllEmojiText */}
