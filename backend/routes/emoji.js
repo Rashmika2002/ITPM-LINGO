@@ -5,25 +5,12 @@ const Emoji = require("../models/Emoji");
 router.route("/add").post((request, response) => {
     const { emoji, meaningEng, meaningSin } = request.body;
 
-<<<<<<< Updated upstream
     const newEmoji = new Emoji({
         emoji,
         meaningEng,
         meaningSin
     });
 
-=======
-// Route to add a new emoji
-router.route("/add").post((request, response) => {
-    const { emoji, meaningEng, meaningSin } = request.body;
-
-    const newEmoji = new Emoji({
-        emoji,
-        meaningEng,
-        meaningSin
-    });
-
->>>>>>> Stashed changes
     newEmoji.save()
         .then(() => {
             response.json("Emoji added successfully");
@@ -33,7 +20,6 @@ router.route("/add").post((request, response) => {
             response.status(500).send({ status: "Error adding emoji", error: error.message });
         });
 });
-<<<<<<< Updated upstream
 
 // Route to get all emojis
 router.route("/").get((request, response) => {
@@ -94,8 +80,6 @@ router.route("/get/:id").get(async (request, response) => {
         response.status(500).send({ status: "Error getting emoji", error: error.message });
     }
 });
-=======
->>>>>>> Stashed changes
 
 // Route to search emoji by entering emoji
 router.route("/search/:emoji").get(async (request, response) => {

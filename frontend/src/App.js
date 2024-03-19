@@ -14,12 +14,9 @@ function App() {
   return (
     <Router>
       <div>
-<<<<<<< Updated upstream
         { <Navbar /> }
-=======
-       <Header /> 
+       {/* <Header />  */}
 
->>>>>>> Stashed changes
         <Routes>
           {/* {emoji to text translater} */}
           {/* Commenting out the route for AllEmojiText */}
