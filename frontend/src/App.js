@@ -12,9 +12,7 @@ import Login from './component/Auth/Login';
 import Profile from './component/Profile/Profile';
 import UpdateUser from './component/UpdateUser/UpdateUser';
 //import Header from './component/Navbar/Header';
-import Addemoji from './component/EmojiText/Addemoji';
 import AllEmojiText from './component/EmojiText/AllEmojiText';
-import EmojiText from './component/EmojiText/EmojiText';
 
 import './App.css';
 
@@ -23,7 +21,6 @@ import './App.css';
 import Addemoji from './component/EmojiText/Addemoji';
 // import { AllEmojiText } from './component/EmojiText/AllEmojiText';
 import EmojiText from './component/EmojiText/EmojiText';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 function App() {
@@ -46,9 +43,8 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/update-profile" element={<UpdateUser />} />
 
-        { <Header /> }
+        {/* { <Header /> } */}
 
-        <Routes>
           {/* {emoji to text translater} */}
           {/* Commenting out the route for AllEmojiText */}
           {/* <Route path='/' element={<AllEmojiText />} /> */}
